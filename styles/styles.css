@@ -1,0 +1,186 @@
+/*PRIMARY COLORS*/
+/*NEUTRAL COLORS*/
+/*STYLES*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: start;
+  font-family: 'Outfit', sans-serif;
+  min-height: 650px;
+  padding: 23px;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  max-width: 350px;
+  width: 100%;
+  padding: 25px;
+  background-color: #14253d;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 17px 113px -34px black;
+          box-shadow: 0px 17px 113px -34px black;
+}
+
+body main header {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body main header .head #first {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+body main header .head #view {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  text-align: center;
+}
+
+body main header .head #view #icon-view {
+  position: relative;
+  top: 123px;
+}
+
+body main header .head:hover > #view {
+  opacity: 1;
+}
+
+body main section {
+  margin-top: 25px;
+}
+
+body main section h1 {
+  color: white;
+  font-size: 1.4rem;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+body main section h1:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+body main section p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #8bacda;
+  line-height: 1.7;
+}
+
+body main section #counts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main section #counts #ethereum-count, body main section #counts #time-count {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #counts #ethereum-count img, body main section #counts #time-count img {
+  width: 11px;
+  height: 18px;
+  margin-right: 7px;
+}
+
+body main section #counts #ethereum-count h2, body main section #counts #time-count h2 {
+  font-size: 1rem;
+  color: #00fff7;
+}
+
+body main section #counts #time-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main section #counts #time-count img {
+  width: 17px;
+  height: 17px;
+}
+
+body main section #counts #time-count h2 {
+  color: #8bacda;
+}
+
+body main section hr {
+  background-color: #2f415b;
+  height: 1px;
+  border: none;
+}
+
+body main section #profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #profile img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 10px 20px 5px 0;
+}
+
+body main section #profile h2 {
+  color: #8bacda;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+body main section #profile h2 a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+body main section #profile h2 a:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=styles.css.map */

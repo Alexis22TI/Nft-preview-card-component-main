@@ -1,0 +1,142 @@
+/*PRIMARY COLORS*/
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+/*NEUTRAL COLORS*/
+$Very-dark-blue-main: hsl(217, 54%, 11%);
+$Very-dark-blue-card: hsl(216, 50%, 16%);
+$Very-dark-blue-line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+/*STYLES*/
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: start;
+    font-family: 'Outfit', sans-serif;
+    min-height: 650px;
+    padding: 23px;
+    background-color: $Very-dark-blue-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main{
+        max-width: 350px;
+        width: 100%;
+        padding: 25px;
+        background-color:$Very-dark-blue-card;
+        border-radius: 15px;
+        box-shadow: 0px 17px 113px -34px black;
+        header{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            .head{
+                #first{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    transition: all 300ms ease-out;
+                }
+                #view{
+                        position: absolute;
+                        top: 0;
+                        background-color: rgba(0, 255, 255,.5);
+                        width: 100%;
+                        height: 100%;
+                        transition: all 300ms ease-out;
+                        opacity: 0;
+                        text-align: center;
+                        #icon-view{
+                            position: relative;
+                            top: 123px;
+                        }
+                    }
+                    &:hover > #view{
+                        opacity: 1;
+                    }
+            }
+        }
+        section{
+            margin-top: 25px;
+            h1{
+                color: $White;
+                font-size: 1.4rem;
+                transition: 300ms ease-out;
+                &:hover{
+                    cursor: pointer;
+                    color: $Cyan;
+                }
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 300;
+                color: $Soft-blue;
+                line-height: 1.7;
+            }
+            #counts{
+                display: flex;
+                justify-content: space-between;
+                #ethereum-count,#time-count{
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 11px;
+                        height: 18px;
+                        margin-right: 7px;
+                    }
+                    h2{
+                        font-size: 1rem;
+                        color: $Cyan;
+                    }
+                }
+                #time-count{
+                    display: flex;
+                    justify-content: flex-end;
+                    img{
+                        width: 17px;
+                        height: 17px;
+                    }
+                    h2{
+                        color: $Soft-blue;
+                    }
+                }
+            }
+            hr{
+                background-color: $Very-dark-blue-line;
+                height: 1px;
+                border: none;
+            }
+            #profile{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid $White;
+                    border-radius: 100%;
+                    margin: 10px 20px 5px 0;
+                }
+                h2{
+                    color: $Soft-blue;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    a{
+                        text-decoration: none;
+                        color: $White;
+                        transition: 300ms ease-out;
+                        &:hover{
+                            color: $Cyan;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
