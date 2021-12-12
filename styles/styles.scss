@@ -140,3 +140,21 @@ body{
         }
     }
 }
+@media screen and (max-width:400px){
+    body{
+        main{
+            header{
+                width: 279px;
+            }
+        }
+    }
+}
+@media screen and (max-width:350px){
+    body{
+        main{
+            header{
+                width: 240px;
+            }
+        }
+    }
+}
